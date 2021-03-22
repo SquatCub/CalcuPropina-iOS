@@ -10,10 +10,20 @@ import UIKit
 class PagoViewController: UIViewController {
     var pago: String?
     
+    @IBOutlet weak var imageCoin: UIImageView!
     @IBOutlet weak var resultadoLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         resultadoLabel.text = pago
+        let total = Double(resultadoLabel.text!) ?? 0.0
+        if total > 1500 {
+            imageCoin.image = #imageLiteral(resourceName: "3")
+        } else if (total > 1000 && total < 1499) {
+            imageCoin.image = #imageLiteral(resourceName: "2")
+        } else {
+            imageCoin.image = #imageLiteral(resourceName: "1")
+        }
+            
         // Do any additional setup after loading the view.
     }
     

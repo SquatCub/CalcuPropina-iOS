@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         let total = Double(totalCuenta.text!) ?? 0.0
         let personas = Int(personaSlider.value)
         let porcentaje = Double(Int(cuentaSlider.value)) / 100
-        calculo = String(format: "%.2f", (total + (total * porcentaje)) / Double(personas)) + " MXN"
+        calculo = String(format: "%.2f", (total + (total * porcentaje)) / Double(personas))
         
         performSegue(withIdentifier: "pago", sender: self)
     }

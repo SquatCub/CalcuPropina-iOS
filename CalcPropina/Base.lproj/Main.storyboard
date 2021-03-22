@@ -225,6 +225,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="DqA-lx-icj"/>
                     <connections>
+                        <outlet property="imageCoin" destination="dzq-8m-IQj" id="nqk-cg-Zrt"/>
                         <outlet property="resultadoLabel" destination="Mu1-1A-GqI" id="g6Q-4y-4ev"/>
                     </connections>
                 </viewController>
