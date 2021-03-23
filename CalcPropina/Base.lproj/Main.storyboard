@@ -80,8 +80,8 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="hYO-qe-tqA">
                                 <rect key="frame" x="86" y="83" width="148" height="94"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Monto de la cuenta:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8t-S6-c3k">
-                                <rect key="frame" x="73" y="185" width="174" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Monto de la cuenta en MXN:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8t-S6-c3k">
+                                <rect key="frame" x="40" y="185" width="240" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -117,14 +117,14 @@
                             <constraint firstItem="hFU-sj-YTX" firstAttribute="top" secondItem="0zM-Le-Dtf" secondAttribute="bottom" constant="139" id="Ino-KN-aJX"/>
                             <constraint firstItem="qxY-D0-p5t" firstAttribute="top" secondItem="0ji-fk-H5D" secondAttribute="bottom" constant="16" id="KWN-e9-xb9"/>
                             <constraint firstItem="0ji-fk-H5D" firstAttribute="trailing" secondItem="qxY-D0-p5t" secondAttribute="trailing" id="L0X-iH-pq1"/>
-                            <constraint firstItem="hFU-sj-YTX" firstAttribute="top" secondItem="L8t-S6-c3k" secondAttribute="bottom" constant="8" id="LYR-r9-y4S"/>
+                            <constraint firstItem="hFU-sj-YTX" firstAttribute="top" secondItem="L8t-S6-c3k" secondAttribute="bottom" constant="6" id="LYR-r9-y4S"/>
                             <constraint firstItem="0zM-Le-Dtf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="46" id="P7O-JL-F2o"/>
                             <constraint firstItem="VC2-jH-mwe" firstAttribute="top" secondItem="hFU-sj-YTX" secondAttribute="bottom" constant="30" id="RDB-C8-Kb9"/>
                             <constraint firstItem="0zM-Le-Dtf" firstAttribute="centerX" secondItem="hFU-sj-YTX" secondAttribute="centerX" id="V8c-YC-YCo"/>
                             <constraint firstItem="M2f-4g-AO0" firstAttribute="leading" secondItem="qxY-D0-p5t" secondAttribute="leading" id="Y1K-wW-j86"/>
                             <constraint firstItem="hYO-qe-tqA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="86" id="Zwp-7K-YzY"/>
                             <constraint firstItem="hYO-qe-tqA" firstAttribute="top" secondItem="0zM-Le-Dtf" secondAttribute="bottom" constant="8" id="cEc-vX-K0z"/>
-                            <constraint firstItem="L8t-S6-c3k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="73" id="eyU-Ue-m64"/>
+                            <constraint firstItem="L8t-S6-c3k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="eyU-Ue-m64"/>
                             <constraint firstItem="L8t-S6-c3k" firstAttribute="centerX" secondItem="hFU-sj-YTX" secondAttribute="centerX" id="ezZ-5N-kMB"/>
                             <constraint firstItem="hYO-qe-tqA" firstAttribute="centerX" secondItem="0zM-Le-Dtf" secondAttribute="centerX" id="fFo-2f-jc2"/>
                             <constraint firstItem="hFU-sj-YTX" firstAttribute="top" secondItem="hYO-qe-tqA" secondAttribute="bottom" constant="37" id="gNp-k3-yr9"/>
@@ -181,7 +181,7 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Calcular nuevamente"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="FDr-k2-57P"/>
+                                    <action selector="goBack:" destination="2nc-6M-ULg" eventType="touchUpInside" id="9kz-n5-nPx"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="145.00 MXN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mu1-1A-GqI">

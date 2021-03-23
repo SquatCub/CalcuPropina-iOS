@@ -23,11 +23,16 @@ class PagoViewController: UIViewController {
         } else {
             imageCoin.image = #imageLiteral(resourceName: "1")
         }
+        resultadoLabel.text = "$" + String(resultadoLabel.text!) + " MXN"
             
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func goBack(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
     /*
     // MARK: - Navigation
 
